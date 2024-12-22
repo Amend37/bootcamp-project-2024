@@ -1,3 +1,6 @@
+import connectDB from "../database/db";
+import BlogModel from "../database/blogSchema"; 
+
 export type Blog = {
   title: string;
   date: string;
@@ -25,3 +28,16 @@ export const blogs: Blog[] = [
     slug: "my-goat-groot",
   },
 ];
+
+export async function getBlogs() {
+  await connectDB();
+
+  try {
+   
+    const blogs = await BlogModel.find().sort({ date: -1 }).lean();
+    return blogs;
+  } catch (err) {
+    console.error("Error fetching blogs:", err);
+    return null; 
+  }
+}
