@@ -8,8 +8,8 @@
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  background-color: rgb(18, 30, 30);  /* using the --cg-black value directly */
-  color: rgb(255, 255, 255);  /* using the --cg-white value directly */
+  background-color: rgb(18, 30, 30); 
+  color: rgb(255, 255, 255);  
   padding: 0;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .link:hover {
-  color: rgb(16, 16, 28);  /* using the --cg-blue value directly */
+  color: rgb(16, 16, 28);  
   text-decoration: underline;
 }
 

@@ -68,14 +68,14 @@
 .socialIcons a {
   margin: 0 10px;
   font-size: 24px;
-  color: rgb(18, 30, 30);  /* --cg-black */
+  color: rgb(18, 30, 30); 
   text-decoration: none;
   display: inline-block;
   transition: color 0.3s;
 }
 
 .socialIcons a:hover {
-  color: rgb(16, 16, 28);  /* --cg-blue */
+  color: rgb(16, 16, 28); 
 }
 
 @media (max-width: 768px) {

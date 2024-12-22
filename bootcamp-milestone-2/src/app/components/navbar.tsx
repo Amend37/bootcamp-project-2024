@@ -12,14 +12,11 @@ export default function Navbar() {
         <Link href="/" className={style.link}>
           Home
         </Link>
-        <Link href="/blogs" className={style.link}>
-          Blogs
-        </Link>
         <Link href="/resume" className={style.link}>
           Resume
         </Link>
-        <Link href="/about" className={style.link}>
-          Contact Me
+        <Link href="/contact" className={style.link}>
+          Contact
         </Link>
       </nav>
     </header>
