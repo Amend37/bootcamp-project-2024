@@ -1,6 +1,6 @@
 import mongoose, { Schema, Model } from "mongoose";
 
-type Blog = {
+export type Blog = {
   title: string;
   date: string; 
   description: string;

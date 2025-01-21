@@ -1,21 +1,20 @@
 import mongoose, { Schema, Model } from "mongoose";
 
-
-type Project = {
+export type ProjectType = {
   title: string;
   description: string;
   image: string;
   repository?: string; 
-}
+};
 
-const ProjectSchema = new Schema<Project>({
+const projectSchema = new Schema<ProjectType>({
   title: { type: String, required: true },
   description: { type: String, required: true },
   image: { type: String, required: true },
   repository: { type: String },
 });
 
-const Blog = mongoose.models['Project'] || mongoose.model("Project", ProjectSchema);
+const ProjectModel = 
+  mongoose.models["Projects"] || mongoose.model("Projects", projectSchema);
 
-
-export default Project;
+export default ProjectModel;
